@@ -36,7 +36,7 @@ def question(request, slug, number):
 	context = {
 		"question_number": number,
 	    	"question": u"Var äter du helst?",
-		"answer1": u"Koh Phangan! Bästa stället i stan",
+		"answer1": u"Koh Phangan! Så himla genuint och gott. Värsta regnskogen inomhus också, riktigt läckert",
 	   	"answer2": u"BARcelona - haha jättekul namn!!",
 	    	"answer3": u"7 428 954",
 	    	"quiz_slug": slug,
