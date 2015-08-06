@@ -1,0 +1,69 @@
+@media only screen and (min-width: 321px) {
+	.container {
+		display: table;
+		width: 100%;
+	}
+	.row { display: table-row; }
+	.column { display: table-cell; }
+}
+
+
+body {
+    background: #FFFFFF;
+    font: 12pt/1.4 "Arial", "Helvetica"; 
+
+}
+h1{color: #000000}
+    a{color: #FFF000}
+    p{
+	border-bottom: 1px solid #FFFFFF;
+	padding-bottom: 5px; 
+} 
+
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+	html, body, .container {
+		height: 100%;
+		margin: 0;
+	}
+	.container {
+		display: table;
+		width: 100%;
+	}
+	.row { display: table-row; }
+	.column {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.wrapper {
+
+		margin: 0 auto;
+		width: 500px;
+	}
+
+
+
+
+
+
