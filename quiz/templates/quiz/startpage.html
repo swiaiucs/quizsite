@@ -23,7 +23,9 @@
 
 				<p>De här quizen kan du göra:</p>
 				{% for quiz_slug, quiz in quizzes.items %}
-	<p>{{ quiz.name }}</p>
+   	 <p><a href="{% url "quiz_page" quiz_slug %}">
+		{{ quiz.name }}
+	</a></p>
 {% endfor %}
 
 			</div>
