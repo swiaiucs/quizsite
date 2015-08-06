@@ -7,9 +7,9 @@ quizzes = {
    		"name": u"Klassiska böcker",
 	   	"description": u"Hur bra kan du dina klassiker?"
 	},
-	"fotboll": {
-	   	"name": u"Största fotbollslagen",
-	   	"description": u"Kan du dina lag?"
+	"charter": {
+	   	"name": u"Thailand, Mallis eller Bulgarien?",
+	   	"description": u"Vilken Svennecharter är du?"
 	},
 	"kanda-hackare": {
 	    	"name": u"Världens mest kända hackare",
@@ -35,10 +35,10 @@ def quiz(request, slug):
 def question(request, slug, number):
 	context = {
 		"question_number": number,
-	    	"question": u"Var äter du helst?",
+	    	"question": u"Var äter du helst i Stockholm?",
 		"answer1": u"Koh Phangan! Så himla genuint och gott. Värsta regnskogen inomhus också, riktigt läckert",
 	   	"answer2": u"BARcelona - haha jättekul namn!!",
-	    	"answer3": u"7 428 954",
+	    	"answer3": u"Vet inte, men det måste vara billigt",
 	    	"quiz_slug": slug,
 	}
 	return render(request, "quiz/question.html", context)
