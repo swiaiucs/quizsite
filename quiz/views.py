@@ -35,9 +35,9 @@ def quiz(request, slug):
 def question(request, slug, number):
 	context = {
 		"question_number": number,
-	    	"question": u"Hur många bultar har ölandsbron?",
-		"answer1": u"12",
-	   	"answer2": u"66 400",
+	    	"question": u"Var äter du helst?",
+		"answer1": u"Koh Phangan! Bästa stället i stan",
+	   	"answer2": u"BARcelona - haha jättekul namn!!",
 	    	"answer3": u"7 428 954",
 	    	"quiz_slug": slug,
 	}
@@ -59,4 +59,3 @@ def completed(request, slug):
 
 
 
-	
