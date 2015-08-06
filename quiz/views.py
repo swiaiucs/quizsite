@@ -45,3 +45,13 @@ def question(request, slug, number):
 
 def completed(request):
 	return render(request, "quiz/completed.html")
+
+
+
+
+
+
+
+
+
+	
