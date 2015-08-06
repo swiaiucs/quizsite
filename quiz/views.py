@@ -7,7 +7,7 @@ quizzes = {
    		"name": u"Klassiska böcker",
 	   	"description": u"Hur bra kan du dina klassiker?"
 	},
-	"fotboll": {
+	"charter": {
 	   	"name": u"Thailand, Mallis eller Bulgarien?",
 	   	"description": u"Vilken Svennechartrare är du?"
 	},
