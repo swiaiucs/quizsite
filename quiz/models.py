@@ -7,7 +7,6 @@ class Quiz(models.Model):
 	slug = models.SlugField(max_length=100)
 	description = models.TextField()
 
-
 class Question(models.Model):
 	quiz = models.ForeignKey(Quiz)
 	question = models.TextField()
