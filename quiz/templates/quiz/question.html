@@ -18,12 +18,33 @@
 			<div class="wrapper">
 				
 				<h1>{{ question_number }}. {{ question }}</h1>
-	<p>{{ answer1 }}</p>
-	<p>{{ answer2 }}</p>
-	<p>{{ answer3 }}</p>
+				<form action="{% url "question_page" quiz.slug question_number %}" method="post">
+			
+{% csrf_token %}
+<p>
+	<label>
+		<input type="radio" name="answer" value="1">
+		{{ answer1 }}
+	</label>
+</p>
+<p>
+	<label>
+		<input type="radio" name="answer" value="2">
+		{{ answer2 }}
+	</label>
+</p>
 
 <p>
-<a href="{% url "question_page" quiz.slug question_number|add:1 %}" class="MyButton">Nästa</a>
+	<label>
+		<input type="radio" name="answer" value="3">
+		{{ answer3 }}
+	</label>
+</p>
+
+
+
+<p>
+<button type="submit" class="MyButton">Nästa</button>
 </p>
 
 <p><a href="{% url "start_page" %}">Till startsidan</a></p>
