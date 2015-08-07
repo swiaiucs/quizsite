@@ -23,7 +23,7 @@
 	<p>{{ answer3 }}</p>
 
 <p>
-<a href="question.html" class="MyButton">Nästa</a>
+<a href="{% url "question_page" quiz.slug question_number|add:1 %}" class="MyButton">Nästa</a>
 </p>
 
 <p><a href="{% url "start_page" %}">Till startsidan</a></p>

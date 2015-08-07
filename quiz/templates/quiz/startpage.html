@@ -25,8 +25,8 @@
 					<p>
 
 				<p>De här quizen kan du göra:</p>
-				{% for quiz_slug, quiz in quizzes.items %}
-   	 <p><a href="{% url "quiz_page" quiz_slug %}">
+				{% for quiz in quizzes %}
+   	 <p><a href="{% url "quiz_page" quiz.slug %}">
 		{{ quiz.name }}
 	</a></p>
 {% endfor %}
