@@ -26,10 +26,12 @@
 
 				<p>De här quizen kan du göra:</p>
 				{% for quiz in quizzes %}
+   	 
    	 <p><a href="{% url "quiz_page" quiz.slug %}">
 		{{ quiz.name }}
 	</a></p>
 {% endfor %}
+
 
 			</div>
 		</div>

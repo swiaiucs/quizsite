@@ -9,7 +9,7 @@ from django.shortcuts import redirect
 
 def startpage(request):
 	context = {
-		"quizzes": Quiz.objects.all[],
+		"quizzes": Quiz.objects.all(),
 	}
 	return render(request, "quiz/startpage.html", context)
 
